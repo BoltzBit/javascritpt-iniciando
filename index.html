@@ -8,20 +8,32 @@
 </head>
 <body>
     <script>
-        function funcName(nome){
+        /*function funcName(nome){
             console.log('Olá eu sou ' + nome + ' prazer')
         }
         funcName('Mateus')
 
         //declarando uma variavel que recebe funcao
-        const name = function meuNome(nome){
+        //podemos definir um valor padrao passados para função
+        const name = function meuNome(nome = 'Mateus'){
             console.log('Olá ' + nome + ' da Uninter')            
         }
+        name()
+        //a funcao passada para uma constante pode ser anonima*/
 
-        name('Mateus')
+        //Fatorial de um numero
 
-        //a funcao passada para uma constante pode ser anonima
+        function fatorial(n){
+            if(n === 1 || n === 0){
+                return 1
+            }else{
+                return n * fatorial(n-1)
+            }
+        }
         
+        const fat = fatorial(5)
+
+        console.log('Result -> ' + fat)
     </script>
 </body>
 </html>
