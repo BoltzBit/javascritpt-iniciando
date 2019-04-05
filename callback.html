@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //uma função assincrona só retorna o resultado após todo seu processamento
+        //como no exemplo abaixo, que retorna somente após os dois segundos passados
+        
+        /*setTimeout(function(){
+            console.log('Hello from async function!')
+        },2000);*/
+
+        //forma diferente de fazer stTimeout
+        //function cbFunc(string){
+        //    console.log('Hello',string)
+        //}
+
+        //setTimeout(cbFunc,2000,'string 01')
+
+        //console.log('1')
+        //console.log('2')
+        //console.log('3')
+
+        //chamando a função dentro de uma assincrona, passando o tempo e uma string
+
+        //a função assincrona executa paralelamente ao fluxo do programa
+        //com fluxo assincrono, não segue fluxo normal
+            
+        function sayHello(cb){
+            return cb('Hello from callback function')
+        }
+        console.log('Console Log 1')
+        sayHello(function(str){
+            console.log(str)
+        })
+
+        console.log('Console Log 2')
+
+        //um callback nem sempre é assincrono, mas um assincrono possui um callback
+
+    </script>
+</body>
+</html>

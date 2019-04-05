@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = []
+
+        //inclui no final
+        arr.push('Mateus')
+
+        //inclui no começo
+        arr.push('Gustavo')
+        arr.push('Luis')
+        arr.push('Victor')
+        arr.push('Jhone')
+        arr.push('Jonas')
+
+        let arr2 = ['javascript','php','python','cake']
+
+        let result = arr.concat(arr2)
+
+        console.log(result)
+
+        //remover e retornar o ultimo elemento
+        //arr.pop()
+
+        //reverter a lista
+        //arr.reverse()
+
+        //copiar porções do array
+        let resultado = arr.slice(1)
+
+        //tanto inclui, como excui
+
+        arr.splice(0,1)
+        console.log(arr)
+
+        console.log(resultado)
+        //remove o primeiro elemento
+        //arr.shift()
+
+        arr.forEach((val, index) => {
+            console.log(arr[index])
+        })
+
+        //iteração pra capturar valores
+
+        //for(let i=0;i<arr.length;i++){
+            //console.log(arr[i])
+        //}
+
+        //arr.forEach((val,index) => {
+        //    if(index == 1){
+        //        arr[index] = ''
+        //    }
+        //    console.log(arr[index])
+        //})
+
+        
+        console.log(arr)  
+    </script>
+</body>
+</html>
